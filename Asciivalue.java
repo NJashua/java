@@ -9,6 +9,7 @@ public static void main(String[] args){
     System.out.print("Enter a Sentence : ");
     String charValue = userValue.nextLine();
     // System.out.println(charValue);
+    System.out.println(charValue.length());
     System.out.print("Enter an index : ");
     int pos = userValue.nextInt();
     char Alphabet = charValue.charAt(pos);
