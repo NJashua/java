@@ -6,9 +6,15 @@ import java.util.Scanner;
 public class Asciivalue {
 public static void main(String[] args){
     Scanner userValue = new Scanner(System.in);
-    char charValue = userValue.next().charAt(0);
-    int getAscii = (int) charValue;
-    System.out.println("The ascii value is: "+ getAscii);
+    System.out.print("Enter a Sentence : ");
+    String charValue = userValue.nextLine();
+    // System.out.println(charValue);
+    System.out.print("Enter an index : ");
+    int pos = userValue.nextInt();
+    char Alphabet = charValue.charAt(pos);
+    int getAscii = (int) Alphabet;
+    System.out.println("The ascii value of " + Alphabet + " is: "+ getAscii);
+    userValue.close();
 }
     
 }
