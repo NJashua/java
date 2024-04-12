@@ -5,7 +5,7 @@ public class Atm {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to Atm");
+        System.out.println("Welcome to SBI Atm.");
         while (true) {
             // System.out.println("Welcome to Atm");
             System.out.println("1. Check Balance");
@@ -26,8 +26,8 @@ public class Atm {
                 case 3:
                     withdrawMoney(scanner);
                     break;
-                case 4:
-                    System.out.println("Thank you for using SBI Atm. see you again.");
+                case 4: 
+                    System.out.println("Thank you for using SBI Banking Atm. excited to see you again.");
                     System.exit(0);
             
                 default:
