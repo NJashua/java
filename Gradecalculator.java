@@ -27,8 +27,13 @@ public class Gradecalculator {
             } else if (gradeNum >= 50 && gradeNum <= 59) {
                 gradeValue = 'E';
                 System.out.println(String.format("Hi %s, your grade is %s. You need to work on it, %s!", name, gradeValue, name));
+<<<<<<< HEAD
             } else{
                 System.out.print("Invalid grade. Please enter your grade in between 0 and 100.");
+=======
+            } else {
+                System.out.println("Invalid grade. Please enter a numerical grade in between 0 and 100.");
+>>>>>>> origin/main
             }
         } catch(java.util.InputMismatchException exception){
             System.out.println("Invalid input: Please enter a numerical grade value, and you will get it");
