@@ -1,4 +1,3 @@
-import java.sql.Struct;
 import java.util.Scanner;
 public class Guessthenumber {
     public static void main(String[] args) {
@@ -9,7 +8,7 @@ public class Guessthenumber {
         String lastName = scanner.next();
         System.out.println("Enter your guess: ");
         int randomNumber = (int) (Math.random() * 100);
-        // System.out.println(randomNumber); haha aatagallu..
+        //System.out.println(randomNumber); haha aatagallu..
         int guessNum = scanner.nextInt();
         
         if (randomNumber == guessNum){

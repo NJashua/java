@@ -12,9 +12,17 @@ public static void main(String[] args){
     System.out.println(charValue.length());
     System.out.print("Enter an index : ");
     int pos = userValue.nextInt();
-    char Alphabet = charValue.charAt(pos);
-    int getAscii = (int) Alphabet;
-    System.out.println("The ascii value of " + Alphabet + " is: "+ getAscii);
+    if (pos > 0 && pos < charValue.length() )
+    {
+        char Alphabet = charValue.charAt(pos);
+        int getAscii = (int) Alphabet;
+        System.out.println(String.format("The sentenc is:  %s \nand it's ASCII value of %s at index %d is: %d",charValue, Alphabet, pos));
+
+    }
+    else {
+        System.out.println("Enter the index with in range: ");
+    }
+
     userValue.close();
 }
     
