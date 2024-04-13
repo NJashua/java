@@ -23,12 +23,12 @@ public class Simplechatbot {
                     break;
                 }
                 else{
-                    System.out.println("Feel free to connect again");
+                    System.out.println("Feel free to connect again..,");
                     break;
                 }
             }
         } catch (IllegalArgumentException e){
-            System.out.println("Enter a correct word in above..");
+            System.out.println("Enter a correct word in above..,");
         }
     }
 }
