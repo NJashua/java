@@ -25,10 +25,10 @@ public class PalindromeChecker {
 
         while (left < right) {
             // Ignore non-alphanumeric characters
-            while (left < right && !Character.isLetterOrDigit(str.charAt(left))) {
+            while (!Character.isLetterOrDigit(str.charAt(left))) {
                 left++;
             }
-            while (left < right && !Character.isLetterOrDigit(str.charAt(right))) {
+            while (!Character.isLetterOrDigit(str.charAt(right))) {
                 right--;
             }
 
