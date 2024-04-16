@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\1038588\\OneDrive - Blue Yonder\\program files\\.git\\slf4j-api-1.7.36.jar",
+        "mysql-connector-j-8.3.0.jar"
+    ]
+}

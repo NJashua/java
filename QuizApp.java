@@ -19,9 +19,10 @@ public static void main(String[] args) {
 
     int score = 0;
     char userAnswer;
+    String userExit = "Exit";
+    
 
     Scanner scanner = new Scanner(System.in);
-
     for (int i = 0; i< questions.length; i++){
         System.out.println(questions[i]);
         System.out.println(options[i]);
@@ -32,12 +33,15 @@ public static void main(String[] args) {
         if (userAnswer == answer[i]){
             System.out.println("Correct!");
             score++;
-        }else{
+        }else if (userAnswer == userExit.charAt(0)) {
+            break;
+        }
+        else{
             System.out.println("Incorrect");
         }
     }
-System.out.println("nQuiz is completed!");
+System.out.println("Quiz is completed!");
 System.out.println("Your final score is " + score + '/' + questions.length);
-    
+scanner.close();
 }
 }
